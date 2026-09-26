@@ -7,19 +7,21 @@ Help Desk — консольное приложение (ООП на Java)
 
 Технологии
 Java 17
-src/main/java/
+
+src/main/java/com/helpdesk/
 ├── Main.java
 ├── model/
-│   ├── Ticket.java
-│   ├── TicketStatus.java
-│   ├── User.java
+│   ├── User.java (абстрактный класс)
 │   ├── Customer.java
 │   ├── SupportAgent.java
-│   └── Administrator.java
+│   ├── Administrator.java
+│   ├── Ticket.java
+│   └── TicketStatus.java (enum)
 ├── service/
-│   ├── NotificationService.java
+│   ├── NotificationService.java (интерфейс)
 │   ├── ConsoleNotificationService.java
-│   └── TicketService.java
+│   ├── TicketService.java
+│   └── HelpDeskApplication.java
 └── repository/
     └── TicketRepository.java
 
